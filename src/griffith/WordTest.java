@@ -54,6 +54,24 @@ class WordTest {
 	
 	@Test
 	void testNotNull() {
-		fail("Not yet implemented");
+		//Create word class instance
+		Word word1 = new Word(new char[] {'a', 'b', 'c'});
+		//Test word contains a
+		assertNotNull(word1.getLetters());
+		
+		//Create word class instance
+		Word word2 = new Word(new char[] {'l', 'o', 'o', 'o', 'n', 'g'});
+		//Test word contains a
+		assertNotNull(word2.getLetters());
+		
+		//Create word class instance
+		Word word3 = new Word(new char[] {'a'});
+		//Test word contains a
+		assertNotNull(word3.getLetters());
+		
+		//Create word class instance
+		Word word4 = new Word(new char[] {});
+		//Test word contains a
+		assertNotNull(word4.getLetters());
 	}
 }
