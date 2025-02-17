@@ -1,8 +1,15 @@
+/*
+ * Roman Polishchuk
+ * 3135838
+ */
+
 package griffith;
 
 import java.util.Arrays;
 
 public class Grades {
+	
+	//Calculate max grades
 	int gradesMax(int[] grades) throws Exception {
 		if (grades == null) {
 			throw new Exception();
@@ -22,6 +29,7 @@ public class Grades {
         return max;
 	}
 	
+	//Calculate grades total
 	int gradesTotal (int[] grades) throws Exception {
 		if (grades == null) {
 			throw new Exception();
@@ -39,6 +47,7 @@ public class Grades {
         return total;
 	}
 	
+	//Calculate grades average
 	double gradesAverage(int[] grades) throws Exception {
 		if (grades == null) {
 			throw new Exception();
@@ -58,6 +67,7 @@ public class Grades {
         return average;
 	}
 	
+	//Calculate number of failed grades
 	int countFails(int[] grades, int minGrade) throws Exception {
 		if (grades == null) {
 			throw new Exception();
