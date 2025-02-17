@@ -36,7 +36,7 @@ class GradesTest {
 		//Test total
 		assertEquals(13, grades.gradesTotal(new int[]{2, 3, 5, 1, 2}));
 		assertEquals(15, grades.gradesTotal(new int[]{5, 9, 3, 7, -9}));
-		assertEquals(-35, grades.gradesTotal(new int[]{6, 8, 15, -34}));
+		assertEquals(-5, grades.gradesTotal(new int[]{6, 8, 15, -34}));
 		
 		//For null and empty array method throw exception
 		

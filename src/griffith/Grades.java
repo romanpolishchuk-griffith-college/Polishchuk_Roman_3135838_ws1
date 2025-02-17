@@ -22,8 +22,21 @@ public class Grades {
         return max;
 	}
 	
-	int gradesTotal (int[] grades) {
-		return 0;
+	int gradesTotal (int[] grades) throws Exception {
+		if (grades == null) {
+			throw new Exception();
+		}
+		if (grades.length == 0) {
+			throw new Exception();
+		}
+		
+		int total = 0;
+		
+        for(int i = 0; i < grades.length; i++)
+        {
+            total += grades[i];
+        };
+        return total;
 	}
 	
 	double gradesAverage(int[] grades) {
