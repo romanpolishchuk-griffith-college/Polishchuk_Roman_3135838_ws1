@@ -31,7 +31,25 @@ class WordTest {
 	
 	@Test
 	void testLength() {
-		fail("Not yet implemented");
+		//Create word class instance
+		Word word1 = new Word(new char[] {'a', 'b', 'c'});
+		//Test word contains a
+		assertEquals(3, word1.length());
+		
+		//Create word class instance
+		Word word2 = new Word(new char[] {'l', 'o', 'o', 'o', 'n', 'g'});
+		//Test word contains a
+		assertEquals(6, word2.length());
+		
+		//Create word class instance
+		Word word3 = new Word(new char[] {'a'});
+		//Test word contains a
+		assertEquals(1, word3.length());
+		
+		//Create word class instance
+		Word word4 = new Word(new char[] {});
+		//Test word contains a
+		assertEquals(0, word4.length());
 	}
 	
 	@Test
