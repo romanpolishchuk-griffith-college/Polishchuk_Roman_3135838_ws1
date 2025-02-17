@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 class GradesTest {
 
 	@Test
-    void testGradesMax(){
+    void testGradesMax() throws Exception{
 		//Create grades class instance
 		Grades grades = new Grades();
 		
@@ -29,7 +29,7 @@ class GradesTest {
 	};
 	
     @Test
-    void testGradesTotal(){
+    void testGradesTotal() throws Exception{
 		//Create grades class instance
 		Grades grades = new Grades();
 		
@@ -47,7 +47,7 @@ class GradesTest {
     };
     
     @Test
-    void testGradesAverage(){
+    void testGradesAverage() throws Exception{
 		//Create grades class instance
 		Grades grades = new Grades();
 		
@@ -65,7 +65,7 @@ class GradesTest {
     };
     
     @Test
-    void testCountFails(){
+    void testCountFails() throws Exception{
 		//Create grades class instance
 		Grades grades = new Grades();
 		
