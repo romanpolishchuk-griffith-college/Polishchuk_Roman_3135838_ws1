@@ -5,6 +5,9 @@ public class Word {
 	private char[] letters;
 	
 	public Word(char[] letters) {
+		if(letters == null) {
+			letters = new char[] {};
+		}
 		this.letters = letters;
 	}
 	
