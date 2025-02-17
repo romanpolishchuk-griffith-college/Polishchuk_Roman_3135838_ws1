@@ -48,7 +48,20 @@ class GradesTest {
     
     @Test
     void testGradesAverage(){
-    	fail("Not yet implemented");
+		//Create grades class instance
+		Grades grades = new Grades();
+		
+		//Test average
+		assertEquals(2.6, grades.gradesAverage(new int[]{2, 3, 5, 1, 2}));
+		assertEquals(3, grades.gradesAverage(new int[]{5, 9, 3, 7, -9}));
+		assertEquals(-1, grades.gradesAverage(new int[]{6, 8, 15, -34}));
+		
+		//For null and empty array method throw exception
+		
+		//Test null
+		assertThrows(Exception.class, () -> grades.gradesAverage(null));
+		//Test empty array
+		assertThrows(Exception.class, () -> grades.gradesAverage(null));
     };
     
     @Test
