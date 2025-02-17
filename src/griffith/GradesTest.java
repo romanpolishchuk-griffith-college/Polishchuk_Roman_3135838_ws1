@@ -25,7 +25,7 @@ class GradesTest {
 		//Test null
 		assertThrows(Exception.class, () -> grades.gradesMax(null));
 		//Test empty array
-		assertThrows(Exception.class, () -> grades.gradesMax(null));
+		assertThrows(Exception.class, () -> grades.gradesMax(new int[]{}));
 	};
 	
     @Test
@@ -43,7 +43,7 @@ class GradesTest {
 		//Test null
 		assertThrows(Exception.class, () -> grades.gradesTotal(null));
 		//Test empty array
-		assertThrows(Exception.class, () -> grades.gradesTotal(null));
+		assertThrows(Exception.class, () -> grades.gradesTotal(new int[]{}));
     };
     
     @Test
@@ -61,7 +61,7 @@ class GradesTest {
 		//Test null
 		assertThrows(Exception.class, () -> grades.gradesAverage(null));
 		//Test empty array
-		assertThrows(Exception.class, () -> grades.gradesAverage(null));
+		assertThrows(Exception.class, () -> grades.gradesAverage(new int[]{}));
     };
     
     @Test
@@ -79,6 +79,6 @@ class GradesTest {
 		//Test null
 		assertThrows(Exception.class, () -> grades.countFails(null, 10));
 		//Test empty array
-		assertThrows(Exception.class, () -> grades.countFails(null, 10));
+		assertThrows(Exception.class, () -> grades.countFails(new int[]{}, 10));
     };
 }

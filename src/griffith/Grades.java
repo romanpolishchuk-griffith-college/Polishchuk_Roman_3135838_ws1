@@ -7,6 +7,9 @@ public class Grades {
 		if (grades == null) {
 			throw new Exception();
 		}
+		if (grades.length == 0) {
+			throw new Exception();
+		}
 		int max = grades[0];
 		
         for(int i = 0; i < grades.length;i++)
