@@ -34,16 +34,16 @@ class GradesTest {
 		Grades grades = new Grades();
 		
 		//Test total
-		assertEquals(13, grades.gradesMax(new int[]{2, 3, 5, 1, 2}));
-		assertEquals(15, grades.gradesMax(new int[]{5, 9, 3, 7, -9}));
-		assertEquals(-35, grades.gradesMax(new int[]{6, 8, 15, -34}));
+		assertEquals(13, grades.gradesTotal(new int[]{2, 3, 5, 1, 2}));
+		assertEquals(15, grades.gradesTotal(new int[]{5, 9, 3, 7, -9}));
+		assertEquals(-35, grades.gradesTotal(new int[]{6, 8, 15, -34}));
 		
 		//For null and empty array method throw exception
 		
 		//Test null
-		assertThrows(Exception.class, () -> grades.gradesMax(null));
+		assertThrows(Exception.class, () -> grades.gradesTotal(null));
 		//Test empty array
-		assertThrows(Exception.class, () -> grades.gradesMax(null));
+		assertThrows(Exception.class, () -> grades.gradesTotal(null));
     };
     
     @Test
