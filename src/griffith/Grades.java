@@ -58,7 +58,23 @@ public class Grades {
         return average;
 	}
 	
-	int countFails(int[] grades, int minGrade) {
-		return 0;
+	int countFails(int[] grades, int minGrade) throws Exception {
+		if (grades == null) {
+			throw new Exception();
+		}
+		if (grades.length == 0) {
+			throw new Exception();
+		}
+		
+		int failed = 0;
+		
+        for(int i = 0; i < grades.length; i++)
+        {
+            if (grades[i] < minGrade) {
+            	failed++;
+            }
+        };
+        
+        return failed;
 	}
 }
