@@ -66,6 +66,19 @@ class GradesTest {
     
     @Test
     void testCountFails(){
-    	fail("Not yet implemented");
+		//Create grades class instance
+		Grades grades = new Grades();
+		
+		//Test average
+		assertEquals(0, grades.countFails(new int[]{21, 30, 50, 100, 20}, 20));
+		assertEquals(2, grades.countFails(new int[]{5, 90, 30, 70, 9}, 10));
+		assertEquals(1, grades.countFails(new int[]{6, 8, 15, -34}, 2));
+		
+		//For null and empty array method throw exception
+		
+		//Test null
+		assertThrows(Exception.class, () -> grades.countFails(null, 10));
+		//Test empty array
+		assertThrows(Exception.class, () -> grades.countFails(null, 10));
     };
 }
