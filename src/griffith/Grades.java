@@ -39,8 +39,23 @@ public class Grades {
         return total;
 	}
 	
-	double gradesAverage(int[] grades) {
-		return 0;
+	double gradesAverage(int[] grades) throws Exception {
+		if (grades == null) {
+			throw new Exception();
+		}
+		if (grades.length == 0) {
+			throw new Exception();
+		}
+		
+		int total = 0;
+		
+        for(int i = 0; i < grades.length; i++)
+        {
+            total += grades[i];
+        };
+        
+        double average = total / (double)grades.length; 
+        return average;
 	}
 	
 	int countFails(int[] grades, int minGrade) {
