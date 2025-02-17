@@ -12,14 +12,16 @@ public class Word {
 	}
 	
 	boolean contains(char symbol) {
-		return false;	
+		return new String(letters).
+				toLowerCase().
+				contains(("" + symbol).toLowerCase());
 	}
 	
 	int length() {
-		return 0;
+		return new String(letters).length();
 	}
 	
 	char[] getLetters() {
-		return null;
+		return letters;
 	}
 }

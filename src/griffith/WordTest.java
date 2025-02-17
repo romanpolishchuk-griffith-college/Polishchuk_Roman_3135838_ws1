@@ -21,12 +21,12 @@ class WordTest {
 		//Create word class instance
 		Word word3 = new Word(new char[] {'a', 'b', 'c'});
 		//Test word contains z
-		assertTrue(word3.contains('z'));
+		assertFalse(word3.contains('z'));
 		
 		//Create word class instance
 		Word word4 = new Word(new char[] {});
 		//Test word contains a
-		assertTrue(word4.contains('a'));
+		assertFalse(word4.contains('a'));
 	}
 	
 	@Test
